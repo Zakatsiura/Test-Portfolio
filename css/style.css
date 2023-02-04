@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Heebo', sans-serif;
+  color: #212430;
+}
+
+/* header {
+
+} */
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.active {
+  color: #ff6464 !important;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 45px;
+  margin-bottom: 100px;
+}
+
+.menu a {
+  padding: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.about-user {
+  display: flex;
+  justify-content: center;
+  border-top: 34px solid #c4c4c4;
+}
+
+.about-user div {
+  width: 500px;
+}
+
+.about-user img {
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+}
+
+.btn {
+  background: #ff6464;
+  border-radius: 2px;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin-top: 35px;
+}
+
+.date {
+  font-size: 20px;
+  border-right: 1px solid #000000;
+  padding-right: 25px;
+  line-height: 29px;
+}
+
+.topic {
+  font-size: 20px;
+  color: #8695a4;
+  padding-left: 25px;
+  line-height: 29px;
+}
+
+.post {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 30px;
+}
+
+.post p {
+  margin-top: 15px;
+}
+
+.burger {
+  width: 17px;
+  height: 20px;
+  margin-left: auto;
+  display: none;
+  border: none;
+  background-image: url('/images/bars-solid.svg');
+  background-color: transparent;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .menu {
+    padding-top: 20px;
+  }
+  .menu a {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .about-user {
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+  .about-user div {
+    order: 1;
+    text-align: center;
+    width: auto;
+  }
+  .about-user img {
+    width: 180px;
+    height: 180px;
+    box-shadow: -10px -10px 0 #edf7fa;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 60px;
+    font-weight: normal;
+    text-align: center;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .date {
+    font-size: 16px;
+    padding-right: 15px;
+  }
+  .topic {
+    font-size: 16px;
+    padding-right: 15px;
+  }
+  .container {
+    padding: 0 18px;
+  }
+  .work {
+    flex-direction: column;
+    width: 345px;
+  }
+  .work img {
+    width: 345px;
+  }
+  .featured-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .works-page h3 {
+    font-size: 24px;
+  }
+}
+.work {
+  display: flex;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.work img {
+  border-radius: 6px;
+  width: 250px;
+  height: 180px;
+  margin-right: 18px;
+}
+.work h3 {
+  margin-top: 0;
+}
+.badge {
+  background-color: #142850;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 16px;
+  padding: 0px 10px;
+}
+.work p {
+  margin-top: 25px;
+}
+.article-page .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 680px;
+}
+.article-page h1 {
+  font-size: 34px;
+  max-width: 500px;
+}
+.article-badge {
+  background: #ff7c7c;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 16px;
+  padding: 0 10px;
+  margin-right: 17px;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.article-topic {
+  font-size: 20px;
+}
+.article-page .img {
+  width: 100%;
+  margin-bottom: 27px;
+}
+.article-page h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.article-page h3 {
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  .article-page h1 {
+    font-size: 30px;
+  }
+  .article-topic {
+    font-size: 18px;
+  }
+  .article-page h2 {
+    font-size: 26px;
+    text-align: left;
+  }
+  .article-page h3 {
+    font-size: 20px;
+  }
+}
+footer {
+  text-align: center;
+  padding: 50px 0;
+}
+.footer p {
+  font-size: 14px;
+}
+.socials {
+  width: 230px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.socials a {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 25px;
+}
+.icon {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.fb {
+  background-image: url('/images/fb.svg');
+}
+.inst {
+  background-image: url('/images/instagram.svg');
+}
+.tw {
+  background-image: url('/images/Tweet.svg');
+}
+.in {
+  background-image: url('/images/Linkedin.svg');
+}
